@@ -12,4 +12,4 @@ This powerful tool allows you to create, manage, and track short URLs for your m
 - **Flexible Deployment**: Host the API locally, on a web server, or in a cloud environment using Docker or proxies like NGINX.
 
 ## Getting Started
-Download the file [Shortify API User Manual](Shortify API User Manual.pdf) and review this.
+Download the [Manual](https://github.com/dtsoden/shortifyapi/raw/main/Shortify%20API%20User%20Manual.pdf) and review.
