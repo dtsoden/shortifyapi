@@ -1,4 +1,5 @@
-![Shortify API](logo.png)
+<img src="logo.png" alt="Description of logo" width="300" />
+
 # Welcome to Shortify API! 
 
 This powerful tool allows you to create, manage, and track short URLs for your marketing campaigns. By using Shortify API, you can generate customizable and trackable links that enhance your marketing effectiveness. These short URLs can even be used to generate QR codes, making them versatile for both digital and offline campaigns. Whether you're hosting the service locally or deploying it to the cloud, this guide will help you get started.
