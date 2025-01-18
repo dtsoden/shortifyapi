@@ -31,9 +31,9 @@ st.markdown(
     .stTextInput>div>input:focus {
         background-color: #50E3C2;
     }
-    div[data-testid="stAppViewContainer"] > div:nth-child(1) {
+    /* div[data-testid="stAppViewContainer"] > div:nth-child(1) {
         display: none;
-    }
+    } */
     .stFullScreenFrame {
         display: flex;
         flex-direction: column;
