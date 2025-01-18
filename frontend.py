@@ -49,7 +49,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-BASE_URL = "https://app.shortifyapi.com"
+#BASE_URL = "https://app.shortifyapi.com"
+BASE_URL = request.url
 
 # Function definitions
 def create_short_link(project_name, destination_url):
