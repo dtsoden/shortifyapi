@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
@@ -49,7 +50,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-BASE_URL = "https://yoururl.com"
+# ----------------------------------------------------------------
+# BE SURE TO SET this Environment Variable --> SHORTIFY_API_URL  |
+#   ON WINDOWS                                                   |
+#	    $env:SHORTIFY_API_URL="https://your_url.com"             |
+#   ON LINUX                                                     |
+#	    export SHORTIFY_API_URL="https://your_url.com"           |
+#   ON CLOUD                                                     |
+#	    Follow the cloud provider's instructions                 |
+# ----------------------------------------------------------------
+BASE_URL = os.environ.get('SHORTIFY_API_URL')
 
 # Function definitions
 def create_short_link(project_name, destination_url):
