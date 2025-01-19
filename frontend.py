@@ -121,7 +121,7 @@ def format_json_as_table(data, key):
     return pd.DataFrame()
 
 # Sidebar for navigation
-st.sidebar.image("MarketingLogo.png", width=200)
+st.sidebar.image("https://raw.githubusercontent.com/dtsoden/shortifyapi/main/MarketingLogo.png", width=200)
 st.sidebar.title("Menu")
 menu_selection = st.sidebar.radio("Select an Option", [
     "Create Short Link",
