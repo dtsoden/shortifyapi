@@ -4,6 +4,8 @@
 
 This powerful tool allows you to create, manage, and track short URLs for your marketing campaigns. By using Shortify API, you can generate customizable and trackable links that enhance your marketing effectiveness. These short URLs can even be used to generate QR codes, making them versatile for both digital and offline campaigns. Whether you're hosting the service locally or deploying it to the cloud, this guide will help you get started.
 
+If you are looking for the frontend of this api you can find the frontend.py file here but also there is a seperate repo so you can fork it independently [here](https://github.com/dtsoden/shortifyapi-frontend/tree/main).
+
 ## Key Benefits
 
 - **Trackable URLs**: Gain valuable insights into user engagement by monitoring click logs.
