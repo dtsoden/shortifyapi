@@ -1,0 +1,22 @@
+# Exported from Render on 2025-01-22T17:34:34Z
+services:
+- type: web
+  name: shortifyapi-frontend
+  runtime: python
+  repo: https://github.com/dtsoden/shortifyapi-frontend
+  plan: free
+  envVars:
+  - key: SHORTIFY_API_URL
+    sync: false
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: ./start.sh
+- type: web
+  name: shortifyapi
+  runtime: python
+  repo: https://github.com/dtsoden/shortifyapi
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+version: "1"
