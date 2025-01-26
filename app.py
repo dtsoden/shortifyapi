@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import random
 import string
+import requests
 
 # Initialize Flask application
 app = Flask(__name__)
@@ -48,8 +49,9 @@ def create_link():
     new_link = ShortLink(project_name=project_name, destination_url=destination_url, unique_id=unique_id)
     db.session.add(new_link)
     db.session.commit()
-
-    return jsonify({'unique_id': unique_id, 'short_url': f"https://app.shortifyapi.com/{unique_id}"})
+    b_url = response.url.split('/')[0] + '//' + response.url.split('/')[2]
+    
+    return jsonify({'unique_id': unique_id, 'short_url': f"{b_url}/{unique_id}"})
 
 @app.route('/<unique_id>', methods=['GET'])
 def redirect_to_destination(unique_id):
